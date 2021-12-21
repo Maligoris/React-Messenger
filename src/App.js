@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import MainPage from "./pages/mainPage/MainPage";
+import Auth from "./pages/auth/Auth";
+import { Routes, Route } from "react-router-dom";
 
+//TODO сделать путь home/id12345 где id это страница конкретного пользователя
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/" element={<MainPage />} /> 
+      </Routes>
     </div>
   );
 }
-
 export default App;

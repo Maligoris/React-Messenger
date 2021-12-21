@@ -1,0 +1,13 @@
+.btnSend {
+  display: inline-block;
+  border-width: 0px;
+  width: 71px;
+  height: 38px;
+  background: #1ca1c1;
+  color: #ffffff;
+}
+
+.btnSend:hover {
+  background: #0078bf;
+  color: #fff;
+}
