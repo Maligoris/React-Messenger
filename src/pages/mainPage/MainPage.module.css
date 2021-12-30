@@ -7,11 +7,12 @@
 body {
   width: 100%;
   min-height: 100vh;
+  font-family: Roboto, sans-serif;
 }
 
 .mainPage {
   display: grid;
-  gap: 10px;
+  gap: 0 0.5%;
   grid-template-columns : 0.1fr 2fr 3fr 5fr 0.1fr;
   grid-template-areas:
     "TopNav  TopNav  TopNav       TopNav     TopNav"

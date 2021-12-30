@@ -2,4 +2,30 @@
   grid-area: sideBar; 
   border: 1px solid #000;
   height: 520px;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #4a4e58;
+  color: #FFFFFF;
 }
+
+.tree {
+  margin-top: 20px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+section:hover {
+  background-color: #33353c;
+}
+section i {
+  padding-left: 10px;
+}
+section p {
+  padding-left: 10px;
+}
+

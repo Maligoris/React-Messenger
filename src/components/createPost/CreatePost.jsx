@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import classes from "./CreatePost.module.css";
 import PostForm from "../UI/input/PostForm";
-import WarningBanner from "../warningBanner/WarningBanner";
 import DownloadPhoto from "../UI/buttons/downloadPhoto/DownloadPhoto";
 import SendButton from "../UI/buttons/send/SendButton";
 
@@ -31,7 +30,7 @@ const CreatePost = ({ create }) => {
     <div className={classes.postBox}>
       <div className={classes.postField} ref={refWrapElm}>
         <PostForm
-          showTools={{show, setShow, refWrapElm }}
+          showTools={{ show, setShow, refWrapElm }}
           value={post.body}
           onChange={(e) => {
             setPost({ ...post, body: e.target.value });
@@ -39,9 +38,8 @@ const CreatePost = ({ create }) => {
         />
         <DownloadPhoto />
         {show && (
-          <div className={classes.buttonAndWarning}>
+          <div className={classes.button}>
             <SendButton onClick={addNewPost} disabled={post.body.trim() < 1} />
-            <WarningBanner IsEmpty={check} />
           </div>
         )}
       </div>
