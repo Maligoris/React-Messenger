@@ -3,6 +3,7 @@
   width: 550px;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .postField {

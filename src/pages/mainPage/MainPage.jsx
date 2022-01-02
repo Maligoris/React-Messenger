@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import classes from "./MainPage.module.css";
 import TopNav from "../../components/topNav/TopNav";
 import SideBar from "../../components/sideBar/SideBar";
+import PageAvatar from "../../components/pageAvatar/PageAvatar";
 import InfoBlockAboutUser from "../../components/infoBlockAboutUser/InfoBlockAboutUser";
 import UserPhotos from "../../components/userPhotos/UserPhotos";
 import CreatePostForm from "../../components/createPost/CreatePost";
@@ -25,7 +26,11 @@ function MainPage() {
     <div className={classes.mainPage}>
       <TopNav />
       <SideBar />
-      <div className={classes.narrowColumn}>NarrowColumn</div>
+
+      <div className={classes.narrowColumn}>
+        <PageAvatar />
+      </div>
+
       <div className={classes.wideColumn}>
         <InfoBlockAboutUser />
         <UserPhotos />

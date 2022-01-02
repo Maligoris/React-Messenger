@@ -1,0 +1,12 @@
+.photoDiv {
+  display: flex;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 15px;
+  background-color: white;
+}
+
+.photo {
+  min-width: 100%;
+  min-height: 100%;
+}
