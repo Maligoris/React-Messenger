@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import classes from "./PostForm.module.css";
 
 const PostForm = ({ showTools, ...props }) => {
-  // Проверка, если пользователь ткнул вне textarea -> show = false
+  // Проверка, если пользователь нажал вне textarea -> show = false
   useEffect(() => {
     const checkIfClickedOutside = (e) => {
       if (

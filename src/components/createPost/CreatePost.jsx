@@ -7,7 +7,6 @@ import SendButton from "../UI/buttons/send/SendButton";
 const CreatePost = ({ create }) => {
   const [post, setPost] = useState({ title: "", body: "" });
   const [show, setShow] = useState(false);
-  const [check, setCheck] = useState(false);
   const refWrapElm = useRef();
 
   const addNewPost = (e) => {
@@ -17,12 +16,7 @@ const CreatePost = ({ create }) => {
       title: post.title,
       body: post.body,
     };
-    if (post.body) {
-      create(newPost);
-      setCheck(false);
-    } else {
-      setCheck(true);
-    }
+    create(newPost);
     setPost({ title: "", body: "" });
   };
 
