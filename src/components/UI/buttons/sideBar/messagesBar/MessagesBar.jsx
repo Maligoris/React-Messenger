@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import classes from "./MessagesBar.module.css";
+import classes from "./MessagesBar.module.scss";
 
 const MessagesBar = ({ sTools, ...props }) => {
   useEffect(() => {

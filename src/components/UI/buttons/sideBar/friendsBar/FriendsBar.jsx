@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import classes from "./FriendsBar.module.css";
+import classes from "./FriendsBar.module.scss";
 
 const FriendsBar = ({ sTools, ...props }) => {
   useEffect(() => {

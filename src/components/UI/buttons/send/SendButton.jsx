@@ -1,4 +1,4 @@
-import classes from "./SendButton.module.css";
+import classes from "./SendButton.module.scss";
 
 const SendButton = ({ disabled, ...props }) => {
   return (

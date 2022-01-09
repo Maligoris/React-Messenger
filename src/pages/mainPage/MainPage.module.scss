@@ -1,3 +1,5 @@
+@import "../../scssComponents/Mixins.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@ body {
 .mainPage {
   display: grid;
   gap: 5% 0.5%;
-  grid-template-columns : 0.1fr 2fr 2fr 5fr 0.1fr;
+  grid-template-columns: 0.1fr 2fr 2fr 5fr 0.1fr;
   grid-template-areas:
     "TopNav  TopNav  TopNav       TopNav     TopNav"
     ".       sideBar narrowColumn wideColumn .";
@@ -22,12 +24,11 @@ body {
 
 .narrowColumn {
   grid-area: narrowColumn;
-  display: grid;
-  justify-content: center;
-  border: 1px solid #000;
+  @include gridAndContentCenter();
+  @include border();
 }
 
 .wideColumn {
   grid-area: wideColumn;
-  border: 1px solid #000;
+  @include border();
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./PageAvatar.module.css";
+import classes from "./PageAvatar.module.scss";
 import avatar from "./img/avatar.jpeg";
 
 const PageAvatar = (props) => {
@@ -19,7 +19,7 @@ const PageAvatar = (props) => {
         className={classes.photo}
         onMouseOver={(e) => setOverlayIsOpen(true)}
         onMouseOut={(e) => setOverlayIsOpen(false)}
-        alt="avatar photo"
+        alt="avatar"
       />
       <div
         className={classes.overlay}

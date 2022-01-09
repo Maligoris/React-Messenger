@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import classes from "./SideBar.module.css";
+import classes from "./SideBar.module.scss";
 import HomeBar from "../UI/buttons/sideBar/homeBar/HomeBar";
 import MessagesBar from "../UI/buttons/sideBar/messagesBar/MessagesBar";
 import FriendsBar from "../UI/buttons/sideBar/friendsBar/FriendsBar";

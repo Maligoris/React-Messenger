@@ -1,16 +1,17 @@
+@import "../../scssComponents/Mixins.scss";
+
 .headerWrap {
   grid-area: TopNav;
   display: grid;
   justify-items: center;
-  border: 1px solid #000;
-
   min-height: 50px;
   min-width: 100%;
   background-color: white;
+  @include border();
 }
 
 .topNav {
-  border: 1px solid #000;
   width: 70%;
   min-height: 50px;
+  @include border();
 }

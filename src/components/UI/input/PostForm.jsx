@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import classes from "./PostForm.module.css";
+import classes from "./PostForm.module.scss";
 
 const PostForm = ({ showTools, ...props }) => {
   // Проверка, если пользователь нажал вне textarea -> show = false

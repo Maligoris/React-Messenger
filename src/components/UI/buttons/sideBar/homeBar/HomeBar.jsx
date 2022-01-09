@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import classes from "./HomeBar.module.css";
+import classes from "./HomeBar.module.scss";
 
 const HomeBar = ({ sTools, ...props }) => {
   useEffect(() => {

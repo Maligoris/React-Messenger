@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import classes from "./SettingsBar.module.css";
+import classes from "./SettingsBar.module.scss";
 
 const SettingsBar = ({ sTools, ...props }) => {
   useEffect(() => {

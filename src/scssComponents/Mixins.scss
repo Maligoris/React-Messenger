@@ -1,0 +1,14 @@
+@mixin border() {
+  border: 1px solid #000;
+}
+
+@mixin gridAndContentCenter() {
+  display: grid;
+  justify-content: center;
+}
+
+@mixin textArea() {
+  width: 400px;
+  resize: none;
+  border: none;
+}

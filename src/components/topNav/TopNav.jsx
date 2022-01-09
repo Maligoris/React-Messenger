@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./TopNav.module.css";
+import classes from "./TopNav.module.scss";
 
 const TopNav = (props) => {
   return (

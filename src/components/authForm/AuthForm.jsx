@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./AuthForm.module.css";
+import classes from "./AuthForm.module.scss";
 
 const AuthForm = (props) => {
   const [login, setLogin] = useState("Введите логин"); 

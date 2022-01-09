@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import classes from "./CreatePost.module.css";
+import classes from "./CreatePost.module.scss";
 import PostForm from "../UI/input/PostForm";
 import DownloadPhoto from "../UI/buttons/downloadPhoto/DownloadPhoto";
 import SendButton from "../UI/buttons/send/SendButton";

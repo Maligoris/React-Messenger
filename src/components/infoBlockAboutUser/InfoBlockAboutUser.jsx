@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./InfoBlockAboutUser.module.css";
+import classes from "./InfoBlockAboutUser.module.scss";
 
 const InfoBlockAboutUser = props => {
   return (

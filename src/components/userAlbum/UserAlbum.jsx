@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./UserPhotos.module.css";
+import classes from "./UserAlbum.module.scss";
 
-const UserPhotos = (props) => {
+const UserAlbum = (props) => {
   return (
     <div className={classes.photosModuleBox}>
       <div className={classes.photosHeaderInfo}>photosHeaderInfo</div>
@@ -11,4 +11,4 @@ const UserPhotos = (props) => {
   );
 };
 
-export default UserPhotos;
+export default UserAlbum;

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import classes from "./MainPage.module.css";
+import classes from "./MainPage.module.scss";
 import TopNav from "../../components/topNav/TopNav";
 import SideBar from "../../components/sideBar/SideBar";
 import PageAvatar from "../../components/pageAvatar/PageAvatar";
 import InfoBlockAboutUser from "../../components/infoBlockAboutUser/InfoBlockAboutUser";
-import UserPhotos from "../../components/userPhotos/UserPhotos";
+import UserAlbum from "../../components/userAlbum/UserAlbum";
 import CreatePostForm from "../../components/createPost/CreatePost";
 import Post from "../../components/post/Post";
 
@@ -33,7 +33,7 @@ function MainPage() {
 
       <div className={classes.wideColumn}>
         <InfoBlockAboutUser />
-        <UserPhotos />
+        <UserAlbum />
         <CreatePostForm create={createPost} />
         {posts.map((post) => (
           <Post post={post} remove={removePost} key={[post.id]} />

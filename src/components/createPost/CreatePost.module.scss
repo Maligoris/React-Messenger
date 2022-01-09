@@ -1,0 +1,21 @@
+@import "../../scssComponents/Mixins.scss";
+
+.postBox {
+  @include gridAndContentCenter();
+  width: 550px;
+  background-color: white;
+  @include border();
+}
+
+.postField, .postFieldShown {
+  padding: 15px;
+  @include border();
+}
+
+.title {
+  width: 100%;
+}
+
+.button {
+  margin-top: 15px;
+}
